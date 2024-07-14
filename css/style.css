@@ -56,6 +56,17 @@ p {
   margin: 10px 0;
 }
 
+.btn {
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.3125rem;
+  padding: 1rem 2rem;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  text-transform: capitalize;
+}
+
 /* Navbar 
 ===============================================
 */
@@ -74,12 +85,22 @@ p {
   float: left;
 }
 
+.header-logo {
+  padding-top: 1rem;
+}
+
 .nav .nav-item .nav-link {
   color: #fff;
 }
 
 .navbar-menu {
   float: right;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .nav .nav-item {
@@ -89,25 +110,16 @@ p {
   letter-spacing: 0.04rem;
 }
 
-.nav {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .nav .nav-link {
   display: block;
   padding: 1.5rem 1.5rem;
-}
-
-.header-logo {
-  padding-top: 1rem;
 }
 
 .nav-item .nav-link:hover,
 .nav-item .nav-link.current {
   background-color: #444;
   color: #f7c08a;
+  text-decoration: underline;
 }
 
 /* Main 
@@ -115,3 +127,34 @@ p {
 */
 
 /* Hero section */
+.section-hero {
+  background: url("../images/showcase.jpg") no-repeat center center/cover;
+  height: 85vh;
+}
+
+.section-body {
+  text-align: center;
+  padding-top: 170px;
+}
+
+.section-body h2 {
+  margin-bottom: 1.75rem;
+  text-transform: capitalize;
+  font-size: 3.75rem;
+  color: #fff;
+}
+
+.section-body p {
+  color: #fff;
+  font-size: 1.25rem;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.section-body a {
+  display: inline-block;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+}

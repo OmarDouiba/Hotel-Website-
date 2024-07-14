@@ -1,7 +1,11 @@
-/* Variables 
-===============================================
-*/
+/* Variables */
 :root {
+  /* FONT SIZE */
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
 }
 /* General 
 ===============================================
@@ -11,18 +15,103 @@
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
-/* Header 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Navbar 
 ===============================================
 */
+.header {
+  background: #333;
+}
+
+.header-logo span {
+  color: #fff;
+}
+
+.header-logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  float: left;
+}
+
+.nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-menu {
+  float: right;
+}
+
+.nav .nav-item {
+  float: left;
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav .nav-link {
+  display: block;
+  padding: 1.5rem 1.5rem;
+}
+
+.header-logo {
+  padding-top: 1rem;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.current {
+  background-color: #444;
+  color: #f7c08a;
+}
+
+/* Main 
+==================================
+*/
+
+/* Hero section */
